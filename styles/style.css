@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.first_section {
+    background-image: url(../images/main_image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar .nav_links ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav_links ul li{
+    margin: 0 25px; 
+}
+
+.navbar .menu_hamburger {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 35px;
+}
+
+.second_section_wrapper {
+    max-width: 1024px;
+    width: 100%;
+    margin: 56px auto;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.buttons p {
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons p:first-child {
+    color: #262626;
+    font-size: 11px;
+}
+
+.buttons p:last-child {
+    background-color: #0865DE;
+    width: 87px;
+    height: 34px;
+    padding-left: 16px;
+    font-size: 12px;
+}
+
+.buttons p:last-child:hover {
+    cursor: pointer;
+}
+
+.some_text {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.some_text h2 {
+    width: 585px;
+    height: 82px;
+    font-size: 32.7px;
+}
+
+.some_text p {
+    margin-top: 45px;
+    font-size: 25px;
+    line-height: 44px;
+}
+
+.nothing_special {
+    display: flex;
+    margin-top: 45px;
+}
+
+.nothing_special span {
+    color: #959595;
+    padding-right: 50px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    padding-right: 5px;
+    color: #959595;
+}
+
+.third_section_wrapper {
+    max-width: 1124px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.special_item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.special_item ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    align-content: center;
+    text-align: center;
+}
+
+.grid_item {
+    padding-left: 45px;
+    padding-top: 45px;
+}
+
+.grid_item h2 {
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.grid_item p {
+    font-size: 18px;
+}
+
+
+.color1 {
+    background-color: #ffffff;
+    width: 835px;
+    height: 339px;
+}
+
+.color2 {
+    background-color: #ffffff;
+    height: 339px;
+}
+
+.color3 {
+    background-color: #ffffff;
+    height: 355px;
+}
+
+.color3 li {
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 0 25px 25px 25px;
+
+}
+
+.color4 {
+    background-color: #ffffff;
+}
+
+.circle {
+    display: flex;
+}
+
+.circle div {
+    margin: 35px 35px 0 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .menu_hamburger {
+        display: block;
+    }
+
+    .menu_hamburger:hover {
+        cursor: pointer;
+    }
+
+    .nav_links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav_links.mobile_menu {
+        margin-left: 0;
+    }
+
+    .nav_links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav_links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .black a{
+        color: black;
+    }
+
+    .second_section_wrapper {
+        padding-left: 50px;
+    }
+
+    .some_text h2 {
+        width: 304px;
+        height: 46px;
+        font-size: 18px;
+    }
+
+    .some_text p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
