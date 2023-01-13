@@ -138,7 +138,6 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
 }
-
 .special_item ul {
     display: flex;
     justify-content: center;
@@ -161,7 +160,9 @@ body {
 .grid_item p {
     font-size: 18px;
 }
-
+/* color class armomwons imitom rom xdeba kodis dublireba sheedzlo erti klasis saxeli daerqmia did 2 boxze da erti klasis saxeli 2 patara
+boxze ufro naklebi kodis wera mouwevda tundac imit rom background-color tetri 4 jer uweria mokled grid sistema aris areuli da aman 
+gamoiwvia shecdomebi dzalian bevri amitom chemi azrit eg boxebis nawili srulad shesacvlelia */
 
 .color1 {
     background-color: #ffffff;
@@ -183,6 +184,7 @@ body {
     list-style-type: none;
     border: 1px solid black;
     padding: 0 25px 25px 25px;
+    /* erterti boxi ar aris sworad gastiluli */
 
 }
 
@@ -201,7 +203,8 @@ body {
     border-radius: 50%;
     background-color: red;
 }
-
+/* gridi ar aris responsiuli amitom saits aqvs gverditi scrolli gridi unda ikos responsiuli 
+radgan gridi araris responsiuli mashin kidev davamatebdi @media axal rezoluciaze*/
 @media screen and (max-width: 1024px) {
     .navbar {
         padding: 0;
